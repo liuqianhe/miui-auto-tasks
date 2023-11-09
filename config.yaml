@@ -1,26 +1,27 @@
 accounts:
-  - uid: 100000
+  - uid: 2499526459
     # 账户ID 非账户用户名或手机号
-    password: Abcd.1234
+    password: mjl15058998729.
     # 账户密码或其MD5哈希
-    user-agent: 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Safari/537.36'
+    #(原)user-agent: 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.69'
     # 登录社区时所用浏览器的 User-Agent
     # 可在此工具查看：https://tool.chinaz.com/useragent
     
     # 功能开关
-    check-in: false
+    check-in: True
     # 社区成长值签到，启用功能意味着你愿意自行承担相关风险
-    browse-user-page: false
+    browse-user-page: True
     # 社区浏览个人主页10秒，启用功能意味着你愿意自行承担相关风险
-    browse-post: false
+    browse-post: True
     # 社区浏览帖子10秒，启用功能意味着你愿意自行承担相关风险
-    thumb-up: false
+    thumb-up: True
     # 点赞帖子，启用功能意味着你愿意自行承担相关风险
     browse-specialpage: false
     # 社区在活动期间可能会出现限时的“浏览指定专题页”任务，启用功能意味着你愿意自行承担相关风险
     board-follow: false
     # 社区可能会出现限时的“加入圈子”任务，启用功能意味着你愿意自行承担相关风险
-    carrot-pull: false
+    carrot-pull: True
     # 社区拔萝卜，启用功能意味着你愿意自行承担相关风险
 
 # 若有多个账户，按照以下模板进行修改，使用时删除前端 #注释
@@ -34,15 +35,23 @@ accounts:
 #    browse-specialpage: false
 #    board-follow: false
 #    carrot-pull: false
-ONEPUSH:
-  notifier: telegram
-  params:
-    title:
-    markdown: false
-    token:
-    userid:
 
-logging: false
+#ONEPUSH:
+#  notifier: pushplus
+#  params:
+#    title:Xiaomi-Sign in
+#    markdown: false
+#    token:848da1ed17604317bb9cbee7cddd644d
+#    #(原无注释) userid:
+
+ONEPUSH:
+  notifier: pushplus
+  params:
+    title: Mi-Sign in
+    token: 848da1ed17604317bb9cbee7cddd644d
+    markdown: false
+
+logging: True
 # 归档日志到本地文件
 version: v1.6.0
 # config 文件版本号，debug用
